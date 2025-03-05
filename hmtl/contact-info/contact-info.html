@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My contact information</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <script src="../../javascript/main.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            [<a href="../index.html">Home</a>]
+            [<a href="../experience/experience.html">Experience</a>]
+            [<a href="#" onclick="darkMode()">dark/light mode</a>]
+        </nav>
+    </header>
+    <hr class="divider">
+    <form  onSubmit="handleClick()">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br>
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
+        <br>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message"></textarea>
+        <br>
+        <button type="reset" title="Reset">Reset</button>
+        <button type="submit" title="Submit">Submit</button> 
+    </form>
+    <ul>
+        <img src="../assets/github-mark.png" alt="Small png of the GitHub logo." title="GitHub Logo" width="18px">
+        [<a href="https://github.com/BryanMarqz" target="_blank" rel="noopener noreferrer">GitHub</a>]
+        <img src="../assets/In-Blue-128.png" alt="Small png of the Linkedin logo." title="Linkedin Logo" width="18px">
+        [<a href="https://www.linkedin.com/in/bryan-márquez-9184862b4/" target="_blank" rel="noopener noreferrer">Linkedin</a>]
+    </ul>
+
+    <hr class="divider">
+    <footer>
+        <nav>
+            [&copy; 2025 Bryan Marquez · Powered by HTML, CSS, JavaScript and lots of love &lt;3.]
+        </nav>
+    </footer>
+</body>
+</html>
