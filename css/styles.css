@@ -1,20 +1,214 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+}
+
 .dark-mode {
     background-color: black;
     color: white;
 }
 
+.dark-mode a {
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 1.8em;
+    margin-top: 0;
+    color: black;
+}
+
+.dark-mode header h2 {
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color:black;
+    padding: 5px 10px;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+.dark-mode nav a:hover {
+    color: blue;
+}
+
 .divider {
     border: none;
-    border-top: 2px solid gray;
+    border-top: 2px solid black;
     width: 100%;
-    margin-top: 20px;
+    margin: 25px 0;
+}
+
+.dark-mode .divider {
+    border-top-color: white;
+}
+
+.profile-pic {
+    max-width: 300px;
+    width: 50%;
+    height: auto;
+    border-radius: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    text-align: justify;
     margin-bottom: 20px;
+    flex: 1;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+label {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.dark-mode input, .dark-mode textarea {
+    background-color: white;
+    color: black;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    height: 30px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: darkblue;
 }
 
 nav a::before {
     content: "[";
+    color: black;
 }
 
 nav a::after {
     content: "]";
+    color: black;
+}
+
+.dark-mode nav a::before {
+    color: white;
+}
+
+.dark-mode nav a::after {
+    color: white;
+}
+
+.dark-mode button {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode button:hover {
+    background-color: blue;
+}
+
+
+form + ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    list-style-type: none;
+    margin: 20px auto;
+}
+
+ul + a:hover {
+    color: blue;
+}
+
+.link {
+    color: black;
+}
+
+.link:hover {
+    color: blue;
 }
