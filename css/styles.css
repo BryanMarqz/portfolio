@@ -10,3 +10,11 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+nav a::before {
+    content: "[";
+}
+
+nav a::after {
+    content: "]";
+}
