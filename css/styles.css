@@ -189,26 +189,3 @@ nav a::after {
 .dark-mode button:hover {
     background-color: blue;
 }
-
-
-form + ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 0;
-    list-style-type: none;
-    margin: 20px auto;
-}
-
-ul + a:hover {
-    color: blue;
-}
-
-.link {
-    color: black;
-}
-
-.link:hover {
-    color: blue;
-}
